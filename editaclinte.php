@@ -36,7 +36,7 @@ if (isset($_POST['btnSalvar'])) {
 
     if (mysqli_affected_rows($conn) > 0) {
         echo "<script> alert('Aparelho editado com sucesso.') </script>";
-        header("Location: ver_clientes2.php");
+        header("Location: infcliente.php?cod=".$codigo);
     } else {
         echo "<script> alert('Ocorreu algum erro.') </script>";
     }

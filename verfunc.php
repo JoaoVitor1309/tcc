@@ -117,15 +117,8 @@
           <th>Nome</th>
           <th>CPF</th>
           <th>Telefone</th>
-          <th>Cidade</th>
-          <th>Bairro</th>
-          <th>Rua</th>
-          <th>Número da casa</th>
           <th>Cargo</th>
-          <th>Nascimento</th>
-          <th>Contratação</th>
           <th>Foto</th>
-          <th>Salário</th>
           <th>Ação</th>
         </tr>
       </thead>
@@ -135,18 +128,11 @@
             <td><?php echo $dados['nome'] ?></td>
             <td><?php echo $dados['cpf'] ?></td>
             <td><?php echo $dados['telefone'] ?></td>
-            <td><?php echo $dados['cidade'] ?></td>
-            <td><?php echo $dados['bairro'] ?></td>
-            <td><?php echo $dados['rua'] ?></td>
-            <td><?php echo $dados['num_casa'] ?></td>
             <td><?php echo $dados['cargo'] ?></td>
-            <td><?php echo $dados['data_nasc'] ?></td>
-            <td><?php echo $dados['data_contratacao'] ?></td>
             <td> <img height="80" width="80" src="imgfunc/<?php echo $dados['foto'] ?>"> </td>
-            <td><?php echo $dados['salario'] ?></td>
+
             <td colspan="2" class="text-center">
-              <a class='btn btn-info btn-sm' href='editafunc.php?cod=<?php echo $dados['cod_func'] ?>'>Editar</a>
-              <a class='btn btn-danger btn-sm' href='#' onclick='confirmar("<?php echo $dados["cod_func"] ?>")'>Excluir</a>
+            <a class='btn btn-info btn-sm' href='inffunc.php?cod=<?php echo $dados['cod_func'] ?>'>Mais informações</a>
             </td>
           </tr>
         <?php } ?>
@@ -154,12 +140,7 @@
       </tbody>
     </table>
 
-    <script>
-      function confirmar(cod) {
-        if (confirm('Você realmente deseja excluir esta linha?'))
-          location.href = 'excluifunc.php?cod=' + cod;
-      }
-    </script>
+   
   </div>
 </body>
 

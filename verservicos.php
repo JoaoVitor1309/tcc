@@ -119,19 +119,21 @@
   </nav><br>
   <br>
 
+  <div class="container">
+
   <h1>Aparelhos em/para conserto</h1><br>
 
   <table>
-    <div class="table-responsive" class="tablesorter">
+    <div class="table-responsive">
       <table class="table table-bordered">
         <thead>
           <tr>
             <th>Modelo</th>
-            <th>Orçamento</th>
-            <th>Chegada</th>
+            <!-- <th>Orçamento</th> -->
+            <!-- <th>Chegada</th> -->
             <th>Foto</th>
-            <th>Problemas</th>
-            <th>Tipo</th>
+            <!-- <th>Problemas</th> -->
+            <!-- <th>Tipo</th> -->
             <th>Cliente</th>
             <th>Status</th>
             <th>Ação</th>
@@ -141,28 +143,24 @@
           <?php while ($dados = mysqli_fetch_array($query)) { ?>
             <tr>
               <td><?php echo $dados['modelo'] ?></td>
-              <td><?php echo $dados['orcamento'] ?></td>
-              <td><?php echo $dados['data_cheg'] ?></td>
+              <!-- <td><?php echo $dados['orcamento'] ?></td> -->
+              <!-- <td><?php echo $dados['data_cheg'] ?></td> -->
               <td> <img height="80" width="80" src="imgservicos/<?php echo $dados['foto'] ?>"> </td>
-              <td><?php echo $dados['tipo'] ?></td>
-              <td><?php echo $dados['problemas'] ?></td>
+              <!-- <td><?php echo $dados['problemas'] ?></td> -->
+              <!-- <td><?php echo $dados['tipo'] ?></td> -->
               <td><?php echo $dados['cliente'] ?></td>
               <td><?php echo $dados['stats'] ?></td>
               <td colspan="2" class="text-center">
-                <a class='btn btn-info btn-sm' href='editaservico.php?cod=<?php echo $dados['cod_aparelho'] ?>'>Editar</a>
-                <a class='btn btn-danger btn-sm' href='#' onclick='confirmar("<?php echo $dados["cod_aparelho"] ?>")'>Excluir</a>
+                <a class='btn btn-info btn-sm' href='infservico.php?cod=<?php echo $dados['cod_aparelho'] ?>'>Mais informações</a>
+                <!-- <a class='btn btn-info btn-sm' href='editaservico.php?cod=<?php echo $dados['cod_aparelho'] ?>'>Editar</a>
+                <a class='btn btn-danger btn-sm' href='#' onclick='confirmar("<?php echo $dados["cod_aparelho"] ?>")'>Excluir</a> -->
               </td>
             </tr>
           <?php } ?>
-
+</div>
         </tbody>
       </table>
-      <script>
-        function confirmar(cod) {
-          if (confirm('Você realmente deseja excluir esta linha?'))
-            location.href = 'excluiservico.php?cod=' + cod;
-        }
-      </script>
+      
 </body>
 
 </html>

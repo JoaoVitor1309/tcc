@@ -120,37 +120,20 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Código</th>
-            <th>Nome</th>
-            <th>CPF</th>
-            <th>Obs</th>
-            <th>CNPJ</th>
-            <th>Telefone</th>
-            <th>Sexo</th>
-            <th>Cidade</th>
+            <th>Nome</th>                       
+            <th>Telefone</th>               
             <th>Bairro</th>
-            <th>Rua</th>
-            <th>Número da casa</th>
             <th>Ação</th>
           </tr>
         </thead>
         <tbody>
           <?php while ($dados = mysqli_fetch_array($query)) { ?>
             <tr>
-              <td><?php echo $dados['cod'] ?></td>
               <td><?php echo $dados['nome'] ?></td>
-              <td><?php echo $dados['cpf'] ?></td>
-              <td><?php echo $dados['obs'] ?></td>
-              <td><?php echo $dados['cnpj'] ?></td>
               <td><?php echo $dados['telefone'] ?></td>
-              <td><?php echo $dados['sexo'] ?></td>
-              <td><?php echo $dados['cidade'] ?></td>
               <td><?php echo $dados['bairro'] ?></td>
-              <td><?php echo $dados['rua'] ?></td>
-              <td><?php echo $dados['num_casa'] ?></td>
               <td colspan="2" class="text-center">
-                <a class='btn btn-info btn-sm' href='editaclinte.php?cod=<?php echo $dados['cod'] ?>'>Editar</a>
-                <a class='btn btn-danger btn-sm' href='#' onclick='confirmar("<?php echo $dados["cod"] ?>")'>Excluir</a>
+                <a class='btn btn-info btn-sm' href='infcliente.php?cod=<?php echo $dados['cod'] ?>'>Mais informações</a>
               </td>
             </tr>
           <?php } ?>
@@ -158,12 +141,6 @@
         </tbody>
       </table>
 
-      <script>
-        function confirmar(cod) {
-          if (confirm('Você realmente deseja excluir esta linha?'))
-            location.href = 'excluiclientes.php?cod=' + cod;
-        }
-      </script>
     </div>
 
 
