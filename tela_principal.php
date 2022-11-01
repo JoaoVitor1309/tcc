@@ -11,7 +11,7 @@
 
 
 
-    <title>Marco Antonio Trajano</title>
+    <title>Marco Antonio </title>
 
     <style>
         h1{
