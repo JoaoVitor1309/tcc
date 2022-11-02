@@ -10,44 +10,13 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="modelocadastro.css">
+
   <title>Cadastrar aparelho</title>
 
 
   <style>
-    #bod {
-      background-color: black;
-    }
-
-    #formu {
-      position: absolute;
-      padding-left: 46%;
-      /*left:32%;
-            top:20%;*/
-      display: inline-block;
-      font-size: 25px;
-    }
-
-    #botao {
-      text-align: center;
-    }
-
-    h1 {
-      text-align: center;
-      color: white;
-    }
-
-    .dropdown {
-
-      justify-content: center;
-      right: 21%;
-    }
-
-    h4 {
-
-      justify-content: center;
-      width: 800px;
-      
-    }
+ 
   </style>
 
   <?php

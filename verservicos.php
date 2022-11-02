@@ -11,48 +11,11 @@
   <script src="js/jquery-latest.js"></script>
   <script src="js/jquery.tablesorter.min.js"></script>
   <script src="js/scripts.js" type="text/javascript"></script>
+  <link ref="stylesheet" href="modelolistagem.css">
+  
   <title>Aparelhos para conserto</title>
+
   <style>
-    table,
-    th,
-    td {
-      text-align: center;
-      position: relative;
-    }
-
-    h1 {
-      text-align: center;
-      color: white;
-    }
-
-    #bod {
-      background-color: black;
-    }
-
-    .dropdown {
-
-      justify-content: center;
-      right: 21%;
-
-
-    }
-
-    h4 {
-
-      justify-content: center;
-      width: 800px;
-      color: black;
-
-
-    }
-
-    th {
-      color: white;
-    }
-
-    td {
-      color: white;
-    }
   </style>
 
   <?php

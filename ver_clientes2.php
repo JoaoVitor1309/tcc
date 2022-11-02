@@ -8,45 +8,10 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link ref="stylesheet" href="modelolistagem.css">
+
   <title>Clientes</title>
   <style>
-    table,
-    th,
-    td {
-      text-align: center;
-      position: relative;
-      background-color: black;
-    }
-
-    h1 {
-      text-align: center;
-      color: white;
-    }
-
-    #bod {
-      background-color: black;
-    }
-
-    h4 {
-
-      color: black
-    }
-
-    .dropdown {
-
-      justify-content: center;
-      right: 9.5%;
-
-
-    }
-
-    th {
-      color: white;
-    }
-
-    td {
-      color: white;
-    }
 
     <?php
     include('conexao.php');

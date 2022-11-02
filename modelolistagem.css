@@ -1,0 +1,40 @@
+table,
+th,
+td {
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#bod {
+  background-color: black;
+}
+
+.dropdown {
+
+  justify-content: center;
+  right: 25%;
+
+
+}
+
+h4 {
+
+  justify-content: center;
+  width: 800px;
+  color: white;
+
+
+}
+
+th {
+  color: white;
+}
+
+td {
+  color: white;
+}
