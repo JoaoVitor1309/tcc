@@ -11,8 +11,8 @@
   <script src="js/jquery-latest.js"></script>
   <script src="js/jquery.tablesorter.min.js"></script>
   <script src="js/scripts.js" type="text/javascript"></script>
-  <link ref="stylesheet" href="modelolistagem.css">
-  
+  <link rel="stylesheet" href="modelolistagem.css">
+
   <title>Aparelhos para conserto</title>
 
   <style>

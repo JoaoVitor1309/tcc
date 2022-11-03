@@ -152,7 +152,7 @@
 
 </head>
 
-<body id="Bod">
+<body id="bod">
 
   <h1>Cadastro de peças</h1><br>
 

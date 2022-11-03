@@ -11,7 +11,7 @@ h1 {
 }
 
 #bod {
-  background-color: black;
+  background-color: black !important;
 }
 
 .dropdown {
