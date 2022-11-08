@@ -18,6 +18,7 @@
     </style>
 </head>    
 <body id="bod">
+
 <?php include ('menu.php');
 ?>
 

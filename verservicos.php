@@ -19,7 +19,7 @@
   </style>
 
   <?php
-  include('conexao.php');
+  include('menu.php');
   $sql = "SELECT * FROM aparelho";
   $query = mysqli_query($conn, $sql);
   ?>
@@ -28,63 +28,12 @@
 
 <body id="bod">
 
-  <nav id="nav" class="navbar navbar-expand-sm bg-success " class="container">
-
-    <div class="container-fluid">
-      <a href="tela_principal.php">
-        <h4>OSVAC</h4>
-      </a>
-
-      <ul class="navbar-nav">
-
-        <div class="dropdown">
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-            Cliente
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="cadastrocliente2.php">Cadastrar Cliente</a>
-            <a class="dropdown-item" href="ver_clientes2.php">Listagem de Clientes</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-            Estoque
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="cadastropecas.php">Cadastrar Peça</a>
-            <a class="dropdown-item" href="verestoque.php">Listagem de Estoque</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-            Funcionários
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="cadastrofunc.php">Cadastrar Funcionário</a>
-            <a class="dropdown-item" href="verfunc.php">Listagem de Funcionários</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-            Serviços
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="cadastroaparelho.php">Cadastrar Serviço</a>
-            <a class="dropdown-item" href="verservicos.php">Listagem de Serviços</a>
-          </div>
-        </div>
-
-      </ul>
-
-  </nav><br>
-  <br>
+  
+ 
 
   <div class="container">
 
-  <h1>Aparelhos em/para conserto</h1><br>
+  <h1>Aparelhos em conserto/consertados</h1><br>
 
   <table>
     <div class="table-responsive">

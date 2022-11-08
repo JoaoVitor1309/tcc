@@ -3,6 +3,7 @@ th,
 td {
   text-align: center;
   position: relative;
+  color: white;
 }
 
 h1 {
@@ -17,7 +18,7 @@ h1 {
 .dropdown {
 
   justify-content: center;
-  right: 25%;
+  right: 25%; 
 
 
 }
@@ -31,10 +32,3 @@ h4 {
 
 }
 
-th {
-  color: white;
-}
-
-td {
-  color: white;
-}

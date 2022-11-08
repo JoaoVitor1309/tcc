@@ -3,7 +3,9 @@
        
     <div class="container-fluid">
         
-    <h4>OSVAC</h4>
+    <a href="tela_principal.php">
+        <h4>OSVAC</h4>
+      </a>
     
     <ul class="navbar-nav">
 
@@ -49,4 +51,4 @@
 
     </ul>
     
-</nav><br><br><br><br><br><br>
+</nav><br><br>
