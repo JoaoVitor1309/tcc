@@ -3,7 +3,7 @@
        
     <div class="container-fluid">
         
-    <a href="tela_principal.php">
+    <a href="tela_principal.php" style="text-decoration:none">
         <h4>OSVAC</h4>
       </a>
     
