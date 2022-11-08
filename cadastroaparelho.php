@@ -20,7 +20,7 @@
   </style>
 
   <?php
-  include('menu.php');
+  include('conexao.php');
 
   if (isset($_POST['btnEnviar'])) {
     $target_dir = "imgservicos/";
@@ -105,6 +105,9 @@
 </head>
 
 <body id="bod">
+
+<?php
+  include('menu.php'); ?>
 
   <h1>Cadastrar aparelho</h1><br>
 

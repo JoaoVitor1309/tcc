@@ -19,7 +19,7 @@
   </style>
 
   <?php
-  include('menu.php');
+  include('conexao.php');
   $sql = "SELECT * FROM aparelho";
   $query = mysqli_query($conn, $sql);
   ?>
@@ -28,7 +28,8 @@
 
 <body id="bod">
 
-  
+<?php
+  include('menu.php'); ?>
  
 
   <div class="container">
@@ -41,11 +42,7 @@
         <thead>
           <tr>
             <th>Modelo</th>
-            <!-- <th>Orçamento</th> -->
-            <!-- <th>Chegada</th> -->
             <th>Foto</th>
-            <!-- <th>Problemas</th> -->
-            <!-- <th>Tipo</th> -->
             <th>Cliente</th>
             <th>Status</th>
             <th>Ação</th>
@@ -55,17 +52,11 @@
           <?php while ($dados = mysqli_fetch_array($query)) { ?>
             <tr>
               <td><?php echo $dados['modelo'] ?></td>
-              <!-- <td><?php echo $dados['orcamento'] ?></td> -->
-              <!-- <td><?php echo $dados['data_cheg'] ?></td> -->
               <td> <img height="80" width="80" src="imgservicos/<?php echo $dados['foto'] ?>"> </td>
-              <!-- <td><?php echo $dados['problemas'] ?></td> -->
-              <!-- <td><?php echo $dados['tipo'] ?></td> -->
               <td><?php echo $dados['cliente'] ?></td>
               <td><?php echo $dados['stats'] ?></td>
               <td colspan="2" class="text-center">
                 <a class='btn btn-info btn-sm' href='infservico.php?cod=<?php echo $dados['cod_aparelho'] ?>'>Mais informações</a>
-                <!-- <a class='btn btn-info btn-sm' href='editaservico.php?cod=<?php echo $dados['cod_aparelho'] ?>'>Editar</a>
-                <a class='btn btn-danger btn-sm' href='#' onclick='confirmar("<?php echo $dados["cod_aparelho"] ?>")'>Excluir</a> -->
               </td>
             </tr>
           <?php } ?>

@@ -11,13 +11,8 @@
 
   <title>Editar Cliente</title>
 
-</head>
-
-<body id="bod">
-
-
-<?php 
-include('menu.php');
+  <?php 
+include('conexao.php');
 
 if (isset($_GET['cod']))
     $codigo = $_GET['cod'];
@@ -62,9 +57,19 @@ $sql = "SELECT * FROM cliente WHERE cod='$codigo'";
 $rs = mysqli_query($conn, $sql);
 $linha = mysqli_fetch_array($rs);
 ?>
-<!-- <?php include('menu.php'); ?> -->
+
+</head>
+
+<body id="bod">
+
+
+
+
+
+<?php include('menu.php'); ?>
+
 <div class='container'>
-    <h1 class='p-3'>Editar usuário</h1>
+    <h1 class='p-3'>Editar cliente</h1>
 
     <form method="post" class="container" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
 

@@ -19,7 +19,7 @@
   </style>
 
   <?php
-  include('menu.php');
+  include('conexao.php');
 
   if (isset($_POST['btnEnviar'])) {
     $target_dir = "imgestoque/";
@@ -99,6 +99,9 @@
 </head>
 
 <body id="bod">
+
+<?php
+  include('menu.php'); ?>
 
   <h1>Cadastro de peças</h1><br>
 

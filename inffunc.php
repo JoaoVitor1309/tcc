@@ -8,55 +8,12 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-latest.js"></script>
-  <script src="js/jquery.tablesorter.min.js"></script>
-  <script src="js/scripts.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="modelolistagem.css">
   <title>Funcionários Cadastrados</title>
-  <style>
-    table,
-    th,
-    td {
-      text-align: center;
-      position: relative;
-    }
 
-    h1 {
-      text-align: center;
-      color: white;
-    }
-
-    #bod {
-      background-color: black;
-    }
-
-    .dropdown {
-
-      justify-content: center;
-      right: 21%;
-
-
-    }
-
-    h4 {
-
-      justify-content: center;
-      width: 800px;
-      color: black;
-
-
-    }
-
-    th {
-      color: white;
-    }
-
-    td {
-      color: white;
-    }
-  </style>
 
   <?php
-  include('menu.php');
+  include('conexao.php');
 
   if (isset($_GET['cod']))
   $codigo = $_GET['cod'];
@@ -71,12 +28,13 @@ elseif (isset($_POST['cod']))
 
 <body id="bod">
 
-  
+<?php
+  include('menu.php'); ?>
 
 
-  <div class="container">
+<div class="container-fluid">
 
-  <h1>Funcionários Cadastrados</h1><br>
+  <h1>Informações do Funcionário</h1><br>
 
   <table>
     <div class="table-responsive">
