@@ -158,7 +158,7 @@ if (isset($_POST['btnEnviar'])) {
 
               <div class="row">
               <div class="col">
-              <label for="data_contracao">Data da contratação</label>
+              <label for="data_contracao">Data da contratação</label> 
                  <input type="date" class="form-control" placeholder="Data de contratação" name="data_contratacao">
               </div>
               <div class="col">

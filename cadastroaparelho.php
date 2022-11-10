@@ -125,9 +125,11 @@
 
     <div class="row">
       <div class="col">
+      <label for="data_cheg">Data da chegada</label>
         <input type="date" class="form-control" placeholder="Data de chegada" name="data_cheg">
       </div>
       <div class="col">
+      <label for="fileToUpload"> Foto do Aparelho</label>
         <input type="file" class="form-control" placeholder="Foto" name="fileToUpload">
       </div>
     </div><br><br>

@@ -154,9 +154,11 @@ $linha = mysqli_fetch_array($rs);
 
     <div class="row">
       <div class="col">
+      <label for="data_cheg">Data da chegada</label>
         <input type="date" class="form-control" placeholder="Data de chegada" name="data_cheg" value="<?php echo $linha['data_cheg'] ?>" />
       </div>
       <div class="col">
+      <label for="fileToUpload"> Foto do Aparelho</label>
         <input type="file" class="form-control" placeholder="Foto" name="fileToUpload" value="<?php echo $linha['foto'] ?>" />
       </div>
     </div><br><br>
